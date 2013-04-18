@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:p="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+
+    <title>A path to Zen: A Drupal starter theme incorporating front-end best practices</title>
+
+    <meta name="author" content="Ifung Lu" />
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Bad browser! Please use a modern one!</p>
+</div>
+
+<div id="impress">
+
+    <!-- AboutMe -->
+    <div id="AboutMe" class="step" data-x="-1500" data-y="0">
+        <h1>A path to Zen</h1>
+        <h2>by Ifung Lu (@h4rrydog)</h2>
+        <h3>Freelance product designer + technologist </h3>
+        <h3><img src="gfx/guanxin-sm.png" class="guanxin--logo"/><a href="http://guanxin.de" target="_blank">guanxin.design</a></h3>
+    </div>
+
+    <!-- Drupal theming is frustrating -->
+    <div id="preFrustrating" class="step slide" data-x="-1000" data-y="0">
+         <h1>Drupal is awesome, but theming is...</h1>
+        <ul>
+            <li>UGLY! <em>DIV-itis, gazillion classes, non-semantic markup!</em></li>
+            <li>INSULAR! <em>Drupal-specific theming. Do you envy front-end devs from other frameworks and all their cool toys?</em></li>
+            <li>HARD! <em>Arrays of doom! print() vs render()? Custom classes?</em></li>
+        </ul>
+    </div>
+    <div id="frustrating" class="step slide" data-x="-1000" data-y="0">
+        <img src="gfx/P1090886.jpg" class="buster--image">
+        <p class="buster--caption">Theming WTFs make you feel angry!</p>
+    </div>
+
+    <!-- Zen Theme -->
+    <div id="zenTheme" class="step slide" data-x="0" data-y="0">
+        <h1>Take a deep breath and find... Zen</h1>
+        <p>Zen 5 base theme: <a href="http://drupal.org/project/zen" target="_blank">drupal.org/project/zen</a></p>
+        <p>Warning: not the "easiest" path and is not for everyone.
+            Assumes you know web technologies & Drupal theming.</p>
+        <p>Zen incorporates best practices by providing tools + boilerplate and getting
+            out of your way.</p>
+        <p>Can only show you the path. You still have to walk the path.</p>
+        <p>The journey to mastery is reward. May find theming peace.</p>
+        <p><em>Pierce the veil & see how deep the rabbit hole goes?</em></p>
+        <img src="gfx/hase.png" />
+    </div>
+
+    <!-- Zen5 features -->
+    <div id="features" class="step" data-x="0" data-y="2000" data-z="-2000">
+        <img src="gfx/zen5features.png" class="features--image"/>
+        <p class="features--caption">("Creating Responsive Drupals Sites with Zen Grids and the Zen 5 Theme", John Albin Wilkins)</p>
+    </div>
+
+    <!-- Zen5 + Fences -->
+    <div id="fences" class="step" data-x="1000" data-y="2000" data-z="-2000">
+        <img src="gfx/fences.png" class="features--image"/>
+        <p class="features--caption">("Creating Responsive Drupals Sites with Zen Grids and the Zen 5 Theme", John Albin Wilkins)</p>
+    </div>
+
+    <!-- Responsive design -->
+    <div id="responsiveDesign" class="step" data-x="2000" data-y="2000" data-z="-2000">
+        <h2>Region vs field-based layouts</h2>
+        <img src="gfx/region-layout.png" class="responsive--image"/>
+        <img src="gfx/fields-layout.png" class="responsive--image"/>
+        <p class="features--caption">("Creating Responsive Drupals Sites with Zen Grids and the Zen 5 Theme", John Albin Wilkins)</p>
+    </div>
+
+    <!-- Zen workflow -->
+    <div id="workflow" class="step" data-x="3000" data-y="2000" data-z="-2000">
+        <h1>Zen workflow</h1>
+        <ul>
+            <li>1. Configure Drupal fields with Fences</li>
+            <li>2. Build a Zen sub-theme</li>
+            <li>3. Design your layouts with Zen Grids and Sass</li>
+        </ul>
+    </div>
+
+    <!-- Installation -->
+    <div id="installZen" class="step" data-x="0" data-y="4000" data-z="-3000">
+        <h1>Installation</h1>
+        <h2>(1) Zen base theme (Drupal module)</h2>
+        <ul>
+            <li>Install <a href="http://drupal.org/project/zen" target="_blank">Zen</a>: <code>drush dl zen</code></li>
+            <li>Dev version uses <a href="http://smacss.com/" target="_blank">SMACSS</a>: <code>drush dl zen-7.x-5.x-dev</code></li>
+        </ul>
+    </div>
+
+    <div id="installZenGrids" class="step" data-x="1000" data-y="4000" data-z="-3000">
+        <h2>(2) Zen Grids (included Sass extension)</h2>
+        <ul>
+            <li>Install Ruby on Windows using <a href="http://chocolatey.org" target="_blank">Chocolatey</a> (built into Ubuntu + OS X): <code>cinst ruby</code></li>
+            <li>Install Compass (Sass dependency): <code>gem install compass</code></li>
+        </ul>
+        <h2>OPTIONAL: Fences (Drupal module)</h2>
+        <ul>
+            <li>Install <a href="http://drupal.org/project/fences" target="_blank">Fences:</a> <code>drush dl fences</code></li>
+        </ul>
+    </div>
+
+    <div id="zenSubTheme" class="step" data-x="2000" data-y="4000" data-z="-3000">
+        <h2>(3) Create a subtheme</h2>
+        <ul>
+            <li>Create a custom subtheme: <code>drush cc all</code>
+            <code>drush zen "My First Sub-theme" theme_machine_name <br />
+                --description="Our example theme." --without-rtl</code></li>
+            <li>Enable subtheme + set default in <code>YOUR_DRUPAL_SITE/admin/appearance</code></li>
+        </ul>
+    </div>
+    <!-- Drupal -->
+    <div id="drupal" class="step" data-x="0" data-y="0" data-z="-4000">
+        <p><a href="http://pathtozen.local:8888" target="_blank">Live Demo</a></p>
+        <img src="gfx/zen-desktop.png" class="demo--image"/>
+        <img src="gfx/zen-mobile.png" class="demo--image"/>
+    </div>
+
+    <!-- Zen -->
+    <div id="zen" class="step parallax" data-x="1000" data-y="-200" data-z="-5000" data-scale="5">
+        <img src="gfx/zen-logo.png" style="width:500px;height:auto"/>
+    </div>
+
+    <!-- Mountain (not a slide) -->
+    <div id="mountain" class="step parallax" data-x="-2500" data-y="250" data-z="-500">
+        <img src="gfx/background-mountains.png" style="width:5000px;height:auto"/>
+    </div>
+
+</div>
+
+<!-- Start the impress.js script -->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
